@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:id="@+id/btnanswer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/answer" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/spinwheel"
+            android:layout_toEndOf="@id/btnanswer"
+            android:layout_toStartOf="@id/btnsetting" />
+
+        <ImageView
+            android:id="@+id/btnsetting"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/setting"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemchoose"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_item1"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/tvchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/chooser1" />
+
+        <ImageView
+            android:id="@+id/tvstart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start"
+            android:layout_marginStart="40dp"
+            android:layout_marginVertical="20dp"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imgicon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemhomograft"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:layout_constraintTop_toBottomOf="@id/itemchoose"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_item2"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/tvhomograft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/homograft" />
+
+        <ImageView
+            android:id="@+id/tvstart2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imgicon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemranking"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/itemhomograft"
+        android:background="@drawable/custom_item1"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/tvranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/rank" />
+
+        <ImageView
+            android:id="@+id/tvstart3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start"
+            android:layout_marginStart="40dp"
+            android:layout_marginVertical="20dp"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imgicon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/itemroulette"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/itemranking"
+        android:background="@drawable/custom_item2"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/tvroulette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginVertical="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/roulette" />
+
+        <ImageView
+            android:id="@+id/tvstart4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/start"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:id="@+id/imgicon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="30dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
